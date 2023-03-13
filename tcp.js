@@ -1,5 +1,5 @@
 const net = require('net');
-
+require('dotenv').config();
 var init = {
     ClientID: null,
     ServerDist: 1,
