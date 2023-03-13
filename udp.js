@@ -1,5 +1,5 @@
 var dgram = require('dgram' || 'node:dgram');
-
+require('dotenv').config();
 const server = dgram.createSocket('udp4');
 
 server.on('error', (err) => {
@@ -16,4 +16,4 @@ server.on('listening', () => {
     console.log(`server listening ${address.address}:${address.port}`);
 });
 
-server.bind(8020);
+server.bind(process.env.PORT);
