@@ -33,4 +33,4 @@ const server = net.createServer(function (socket) {
     });
 });
 
-server.listen(process.env.PORT, '127.0.0.1');
+server.listen(process.env.PORT);
