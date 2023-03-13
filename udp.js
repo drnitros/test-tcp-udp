@@ -1,4 +1,4 @@
-var dgram = require('node:dgram');
+var dgram = require('dgram' || 'node:dgram');
 
 const server = dgram.createSocket('udp4');
 
